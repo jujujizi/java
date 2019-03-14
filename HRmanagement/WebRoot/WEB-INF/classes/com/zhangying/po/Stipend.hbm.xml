@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhangying.po.Stipend" table="stipend">
+		<id column="id" name="id" type="long">
+			<generator class="native"/>
+		</id>
+		<property name="name" length="50" type="string"/>
+		<property name="basic" length="53" type="float"/>
+		<property name="granttime" length="23" type="timestamp"/>
+		<property name="duty" length="53" type="float"/>
+		<property name="punishment" length="53"  type="float"/>
+		<property name="other" length="53" type="float"/>
+		<property name="totalize" length="53" type="float"/>
+	</class>
+</hibernate-mapping>

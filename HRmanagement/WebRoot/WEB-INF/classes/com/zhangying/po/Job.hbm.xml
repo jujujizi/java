@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhangying.po.Job" table="job">
+		<id column="id" name="id" type="long">
+			<generator class="native"/>		<!-- 主键生成策略 -->
+		</id>
+		<property name="name" length="50" type="string"/>
+		<property name="sex" length="1" type="byte"/>
+		<property name="age" length="10" type="integer"/>
+		<property name="job" length="50" type="string"/>
+		<property name="specialty" length="50" type="string"/>
+		<property name="experience" length="50" type="string"/>
+		<property name="studyeffort" length="50" type="string"/>
+		<property name="school" length="50" type="string"/>
+		<property name="tel" length="50" type="string"/>
+		<property name="email" length="50" type="string"/>
+		<property name="createtime" length="23" type="timestamp"/>
+		<property name="content" length="1073741823" type="string"/>
+		<property name="isstock" length="1" type="byte"/>
+		<property name="health" length="1" type="byte"/>
+	</class>
+</hibernate-mapping>

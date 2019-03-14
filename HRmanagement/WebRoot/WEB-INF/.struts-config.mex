@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/index.do" location="50,50" dimension="79,70" />
+  <StrutsActivity path="/main.do" location="350,50" dimension="76,70" />
+  <StrutsActivity path="/adduser.do" location="650,50" dimension="96,70" />
+  <StrutsActivity path="/addjob.do" location="950,50" dimension="90,70" />
+  <StrutsActivity path="/addeducate.do" location="1250,50" dimension="117,70" />
+  <StrutsActivity path="/addinstitution.do" location="1550,50" dimension="127,70" />
+  <StrutsActivity path="/addstipend.do" location="1850,50" dimension="114,70" />
+  <StrutsActivity path="/logon.do" location="50,250" dimension="126,104" />
+  <StrutsActivity path="/user.do" location="350,250" dimension="126,104" />
+  <StrutsActivity path="/modifyuser.do" location="650,250" dimension="126,104" />
+  <StrutsActivity path="/selectuser.do" location="950,250" dimension="126,104" />
+  <StrutsActivity path="/job.do" location="1250,250" dimension="114,104" />
+  <StrutsActivity path="/modifyjob.do" location="1550,250" dimension="114,104" />
+  <StrutsActivity path="/detailjob.do" location="1850,250" dimension="114,104" />
+  <StrutsActivity path="/updatejob.do" location="50,450" dimension="114,104" />
+  <StrutsActivity path="/educate.do" location="350,450" dimension="139,104" />
+  <StrutsActivity path="/modifyeducate.do" location="650,450" dimension="139,104" />
+  <StrutsActivity path="/detaileducate.do" location="950,450" dimension="139,104" />
+  <StrutsActivity path="/updateeducate.do" location="1250,450" dimension="139,104" />
+  <StrutsActivity path="/institution.do" location="1550,450" dimension="150,104" />
+  <StrutsActivity path="/modifyinstitution.do" location="1850,450" dimension="150,104" />
+  <StrutsActivity path="/detailinstitution.do" location="50,650" dimension="150,104" />
+  <StrutsActivity path="/updateinstitution.do" location="350,650" dimension="150,104" />
+  <StrutsActivity path="/stipend.do" location="650,650" dimension="137,104" />
+  <StrutsActivity path="/modifystipend.do" location="950,650" dimension="137,104" />
+  <StrutsActivity path="/detailstipend.do" location="1250,650" dimension="137,104" />
+  <StrutsActivity path="/updatestipend.do" location="1550,650" dimension="137,104" />
+  <StrutsActivity path="error;6" location="1850,650" dimension="98,87" />
+  <StrutsActivity path="/welcome.jsp" location="50,850" dimension="108,53" />
+  <StrutsActivity path="/main.jsp" location="350,850" dimension="85,53" />
+  <StrutsActivity path="/adduser.jsp" location="650,850" dimension="105,53" />
+  <StrutsActivity path="/addjob.jsp" location="950,850" dimension="99,53" />
+  <StrutsActivity path="/addeducate.jsp" location="1250,850" dimension="126,53" />
+  <StrutsActivity path="/addinstitution.jsp" location="1550,850" dimension="136,53" />
+  <StrutsActivity path="/addstipend.jsp" location="1850,850" dimension="123,53" />
+  <StrutsActivity path="/manage.jsp" location="350,1050" dimension="104,53" />
+  <StrutsActivity path="/listuser.jsp" location="650,1050" dimension="98,53" />
+  <StrutsActivity path="/updateuser.jsp" location="950,1050" dimension="123,53" />
+  <StrutsActivity path="/listjob.jsp" location="1250,1050" dimension="92,53" />
+  <StrutsActivity path="/detailjob.jsp" location="1550,1050" dimension="108,53" />
+  <StrutsActivity path="/updatejob.jsp" location="1850,1050" dimension="117,53" />
+  <StrutsActivity path="/listeducate.jsp" location="50,1250" dimension="119,53" />
+  <StrutsActivity path="/detaileducate.jsp" location="350,1250" dimension="135,53" />
+  <StrutsActivity path="/updateeducate.jsp" location="650,1250" dimension="144,53" />
+  <StrutsActivity path="/listinstitution.jsp" location="950,1250" dimension="129,53" />
+  <StrutsActivity path="/detailinstitution.jsp" location="1250,1250" dimension="145,53" />
+  <StrutsActivity path="/updateinstitution.jsp" location="1550,1250" dimension="154,53" />
+  <StrutsActivity path="/liststipend.jsp" location="1850,1250" dimension="116,53" />
+  <StrutsActivity path="/detailstipend.jsp" location="50,1450" dimension="132,53" />
+  <StrutsActivity path="/updatestipend.jsp" location="350,1450" dimension="141,53" />
+  <StrutsActivity path="/error.jsp" location="650,1450" dimension="87,53" />
+  <StrutsActivity path="/failed.jsp" location="50,1050" dimension="89,53" />
+  <StrutsTransition id="/updatestipend.do,success,/updatestipend.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1618,754" />
+      <AbsolutePoint location="1618,799" />
+      <AbsolutePoint location="605,799" />
+      <AbsolutePoint location="605,1476" />
+      <AbsolutePoint location="491,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addinstitution.do,null,/addinstitution.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,85" />
+      <AbsolutePoint location="1470,85" />
+      <AbsolutePoint location="1470,876" />
+      <AbsolutePoint location="1550,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifystipend.do,success,/stipend.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,702" />
+      <AbsolutePoint location="787,702" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addeducate.do,null,/addeducate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,85" />
+      <AbsolutePoint location="1164,85" />
+      <AbsolutePoint location="1164,876" />
+      <AbsolutePoint location="1250,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateinstitution.do,success,/updateinstitution.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="469,754" />
+      <AbsolutePoint location="469,1208" />
+      <AbsolutePoint location="1627,1208" />
+      <AbsolutePoint location="1627,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateeducate.do,success,/updateeducate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,502" />
+      <AbsolutePoint location="1104,502" />
+      <AbsolutePoint location="1104,1118" />
+      <AbsolutePoint location="722,1118" />
+      <AbsolutePoint location="722,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifyinstitution.do,success,/institution.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,502" />
+      <AbsolutePoint location="1700,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/selectuser.do,success,/updateuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,302" />
+      <AbsolutePoint location="929,302" />
+      <AbsolutePoint location="929,1076" />
+      <AbsolutePoint location="950,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adduser.do,null,/adduser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,85" />
+      <AbsolutePoint location="575,85" />
+      <AbsolutePoint location="575,876" />
+      <AbsolutePoint location="650,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,null,/welcome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,85" />
+      <AbsolutePoint location="-25,85" />
+      <AbsolutePoint location="-25,876" />
+      <AbsolutePoint location="50,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addjob.do,null,/addjob.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,85" />
+      <AbsolutePoint location="869,85" />
+      <AbsolutePoint location="869,876" />
+      <AbsolutePoint location="950,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="error;6,null,/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1948,693" />
+      <AbsolutePoint location="2075,693" />
+      <AbsolutePoint location="2075,1476" />
+      <AbsolutePoint location="737,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/stipend.do,success,/liststipend.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="770,754" />
+      <AbsolutePoint location="770,1148" />
+      <AbsolutePoint location="1908,1148" />
+      <AbsolutePoint location="1908,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifyjob.do,success,/job.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,302" />
+      <AbsolutePoint location="1364,302" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/main.do,null,/main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,85" />
+      <AbsolutePoint location="275,85" />
+      <AbsolutePoint location="275,876" />
+      <AbsolutePoint location="350,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifyeducate.do,success,/educate.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,502" />
+      <AbsolutePoint location="489,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updatejob.do,success,/updatejob.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="164,502" />
+      <AbsolutePoint location="305,502" />
+      <AbsolutePoint location="305,978" />
+      <AbsolutePoint location="1908,978" />
+      <AbsolutePoint location="1908,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailjob.do,success,/detailjob.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,302" />
+      <AbsolutePoint location="1719,302" />
+      <AbsolutePoint location="1719,1076" />
+      <AbsolutePoint location="1658,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifyuser.do,success,/user.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,302" />
+      <AbsolutePoint location="476,302" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addstipend.do,null,/addstipend.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,85" />
+      <AbsolutePoint location="1779,85" />
+      <AbsolutePoint location="1779,876" />
+      <AbsolutePoint location="1850,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/educate.do,success,/listeducate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,502" />
+      <AbsolutePoint location="335,502" />
+      <AbsolutePoint location="335,1276" />
+      <AbsolutePoint location="169,1276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/job.do,success,/listjob.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,302" />
+      <AbsolutePoint location="1224,302" />
+      <AbsolutePoint location="1224,1076" />
+      <AbsolutePoint location="1250,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailinstitution.do,success,/detailinstitution.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="197,754" />
+      <AbsolutePoint location="197,1378" />
+      <AbsolutePoint location="1322,1378" />
+      <AbsolutePoint location="1322,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailstipend.do,success,/detailstipend.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,702" />
+      <AbsolutePoint location="1134,702" />
+      <AbsolutePoint location="1134,1578" />
+      <AbsolutePoint location="116,1578" />
+      <AbsolutePoint location="116,1503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,success,/listuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="476,332" />
+      <AbsolutePoint location="515,332" />
+      <AbsolutePoint location="515,1076" />
+      <AbsolutePoint location="650,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/institution.do,success,/listinstitution.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1625,554" />
+      <AbsolutePoint location="1625,599" />
+      <AbsolutePoint location="1194,599" />
+      <AbsolutePoint location="1194,1276" />
+      <AbsolutePoint location="1079,1276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logon.do,success,/manage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="176,302" />
+      <AbsolutePoint location="215,302" />
+      <AbsolutePoint location="215,1076" />
+      <AbsolutePoint location="350,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detaileducate.do,success,/detaileducate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,502" />
+      <AbsolutePoint location="809,502" />
+      <AbsolutePoint location="809,1178" />
+      <AbsolutePoint location="417,1178" />
+      <AbsolutePoint location="417,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logon.do,failed,/welcome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="113,302" />
+      <AbsolutePoint location="104,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

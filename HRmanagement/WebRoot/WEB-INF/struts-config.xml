@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans>
+    <form-bean name="userForm" type="com.zhangying.action.UsersForm" />
+    <form-bean name="jobForm" type="com.zhangying.action.JobForm" />
+    <form-bean name="educateForm" type="com.zhangying.action.EducateForm" />
+    <form-bean name="institutionForm" type="com.zhangying.action.InstitutionForm" />
+    <form-bean name="stipendForm" type="com.zhangying.action.StipendForm" />
+    <form-bean name="performanceForm" type="com.zhangying.action.PerformanceForm" />
+  </form-beans>
+  <global-forwards>
+    <forward name="error" path="/error.jsp" />
+  </global-forwards>
+  <action-mappings>
+    <action forward="/welcome.jsp" path="/index" />
+    <action forward="/main.jsp" path="/main" />
+    <action forward="/adduser.jsp" path="/adduser" />
+    <action forward="/addjob.jsp" path="/addjob" />
+    <action forward="/addeducate.jsp" path="/addeducate" />
+    <action forward="/addinstitution.jsp" path="/addinstitution" />
+    <action forward="/addstipend.jsp" path="/addstipend" />
+    <action forward="/addperformance.jsp" path="/addperformance" />
+    <action name="userForm" path="/logon" scope="request" type="com.zhangying.action.UsersAction">
+      <forward name="success" path="/manage.jsp" />
+      <forward name="failed" path="/welcome.jsp" />
+    </action>
+	<action name="userForm" path="/user" scope="request" type="com.zhangying.action.UsersAction">
+	  <forward name="success" path="/listuser.jsp" />
+	</action>
+    <action name="userForm" path="/modifyuser" scope="session" type="com.zhangying.action.UsersAction">
+      <forward name="success" path="/user.do?action=listuser" />
+    </action>
+    <action path="/selectuser" scope="request" type="com.zhangying.action.UsersAction">
+      <forward name="success" path="/updateuser.jsp" />
+    </action>
+	<action name="jobForm" path="/job" scope="request" type="com.zhangying.action.JobAction">
+		<forward name="success" path="/listjob.jsp" />
+	</action>
+	<action name="jobForm" path="/modifyjob" scope="session" type="com.zhangying.action.JobAction">
+		<forward name="success" path="/job.do?action=listjob" />
+	</action>
+	<action path="/detailjob" scope="request" type="com.zhangying.action.JobAction">
+		<forward name="success" path="/detailjob.jsp" />
+	</action>
+    <action path="/updatejob" scope="request" type="com.zhangying.action.JobAction">
+      <forward name="success" path="/updatejob.jsp" />
+    </action>
+    <action name="educateForm" path="/educate" scope="request" type="com.zhangying.action.EducateAction">
+      <forward name="success" path="/listeducate.jsp" />
+    </action>
+    <action name="educateForm" path="/modifyeducate" scope="session" type="com.zhangying.action.EducateAction">
+      <forward name="success" path="/educate.do?action=listeducate" />
+    </action>
+    <action path="/detaileducate" scope="request" type="com.zhangying.action.EducateAction">
+      <forward name="success" path="/detaileducate.jsp" />
+    </action>
+    <action path="/updateeducate" scope="request" type="com.zhangying.action.EducateAction">
+      <forward name="success" path="/updateeducate.jsp" />
+    </action>
+    <action name="institutionForm" path="/institution" scope="request" type="com.zhangying.action.InstitutionAction">
+      <forward name="success" path="/listinstitution.jsp" />
+    </action>
+    <action name="institutionForm" path="/modifyinstitution" scope="session" type="com.zhangying.action.InstitutionAction">
+      <forward name="success" path="/institution.do?action=listinstitution" />
+    </action>
+    <action path="/detailinstitution" scope="request" type="com.zhangying.action.InstitutionAction">
+      <forward name="success" path="/detailinstitution.jsp" />
+    </action>
+    <action path="/updateinstitution" scope="request" type="com.zhangying.action.InstitutionAction">
+      <forward name="success" path="/updateinstitution.jsp" />
+    </action>
+    <action name="stipendForm" path="/stipend" scope="request" type="com.zhangying.action.StipendAction">
+      <forward name="success" path="/liststipend.jsp" />
+    </action>
+    <action name="stipendForm" path="/modifystipend" scope="session" type="com.zhangying.action.StipendAction">
+      <forward name="success" path="/stipend.do?action=liststipend" />
+    </action>
+    <action path="/detailstipend" scope="request" type="com.zhangying.action.StipendAction">
+      <forward name="success" path="/detailstipend.jsp" />
+    </action>
+    <action path="/updatestipend" scope="request" type="com.zhangying.action.StipendAction">
+      <forward name="success" path="/updatestipend.jsp" />
+    </action>
+    <action name="performanceForm" path="/performance" scope="request" type="com.zhangying.action.PerformanceAction">
+      <forward name="success" path="/listperformance.jsp" />
+    </action>
+    <action name="performanceForm" path="/modifyperformance" scope="session" type="com.zhangying.action.PerformanceAction">
+      <forward name="success" path="/performance.do?action=listperformance" />
+    </action>
+    <action path="/detailperformance" scope="request" type="com.zhangying.action.PerformanceAction">
+      <forward name="success" path="/detailperformance.jsp" />
+    </action>
+    <action path="/updateperformance" scope="request" type="com.zhangying.action.PerformanceAction">
+      <forward name="success" path="/updateperformance.jsp" />
+    </action>
+  </action-mappings>
+</struts-config>
+
+

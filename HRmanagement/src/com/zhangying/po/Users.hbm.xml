@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhangying.po.Users" table="users">
+		<id column="id" name="id" type="long">
+			<generator class="native"/>		<!-- 主键生成策略 -->
+		</id>
+		<property name="username" length="50" type="string"/>
+		<property name="password" length="50" type="string"/>
+		<property name="sex" length="1" type="byte"/>
+		<property name="birthday" length="23" type="timestamp"/>
+		<property name="createtime" length="23"  type="timestamp"/>
+		<property name="isadmin" length="1" type="byte"/>
+		<property name="content" length="2000" type="string"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhangying.po.Educate" table="educate">
+		<id column="id" name="id" type="long">
+			<generator class="native"/>		<!-- 主键生成策略 -->
+		</id>
+		<property name="name" length="100" type="string"/>
+		<property name="purpose" length="500" type="string"/>
+		<property name="begintime" length="23" type="timestamp"/>
+		<property name="endtime" length="23" type="timestamp"/>
+		<property name="datum" length="2000" type="string"/>
+		<property name="teacher" length="50" type="string"/>
+		<property name="student" length="50" type="string"/>
+		<property name="createtime" length="23" type="timestamp"/>
+		<property name="effect" length="500" type="string"/>
+		<property name="educate" length="1" type="byte"/>
+		<property name="summarize" length="2000" type="string"/>
+	</class>
+</hibernate-mapping>
